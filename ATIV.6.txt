@@ -1,0 +1,38 @@
+programa {
+  funcao inicio() {
+    //Declarando variáveis 
+    inteiro primeiroNumero, segundoNumero
+    real media, soma
+    
+    //Solicitando dados 
+   escreva("Primeiro Nota: ")
+    leia (primeiroNumero)
+   escreva("Segundo Nota: ")
+    leia (segundoNumero)
+    
+    limpa()
+    //Calcular 
+    soma= primeiroNumero + segundoNumero
+    media=(primeiroNumero + segundoNumero)/2
+
+    //Exibir
+    escreva("\nEXIBINDO DADOS")
+    escreva("\nPrimeira nota: ", primeiroNumero)
+    escreva("\nSegunda Nota: ", segundoNumero)
+    escreva("\nMédia:", media)
+
+    //Verificar estrutura consdional 
+    se (media == 6 ou media > 6){
+      escreva("\nAPROVADO")
+    }
+    se(media == 4){
+      escreva("\nRECUPERAÇÃO")
+    }
+    se(media < 4){
+      escreva("\nREPROVADO")
+    }
+
+
+
+  }
+}
